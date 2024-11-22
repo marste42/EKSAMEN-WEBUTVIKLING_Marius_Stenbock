@@ -1,0 +1,448 @@
+html {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1000px;
+}
+
+main {
+    padding: 1rem;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+
+
+
+#global-header {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#global-header .search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+#global-header .search-form input {
+    padding: 1rem;
+    border: 1px solid #383636;
+    border-radius: 20px;
+    
+}
+
+#global-header .search-form button {
+    position: absolute;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#global-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: auto;
+}
+
+#global-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1;
+    padding: 0;
+    align-items: center;
+    
+}
+
+#global-header nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+ 
+#global-header .fa-icon {
+  list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+#global-header .fa-icon i {
+    color: #333;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+#global-header .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+    /*Header ferdig! */
+
+    .banner {
+        background-color: lightgrey;
+        padding: 4rem;
+        h1 {
+            font-size: 20px;
+            text-align: right;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: right;
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: white;
+            color: #333;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 0;
+            float: right;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            min-width: auto;
+        }
+    }
+
+    .button-container {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        max-width: 1000px;
+        margin: auto;
+
+        button {
+            background-color: #333;
+            color: #ffffff;
+            border: 1px solid black;
+            padding: 25px;
+            margin: 10px;
+            flex: 200px;
+            min-width: 150px;
+           
+        }
+
+        }
+    
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        border: dotted;
+        padding: 1rem;
+        
+    }
+
+  
+
+    .product-grid img {
+        width: 100%;  
+        max-width: 1000px;
+    }
+
+    .product-grid img {
+        border: 5px solid #333;
+    }
+
+    .product-grid a {
+        color: #333;
+    }
+
+/* Kategorikort */
+
+#category-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.category-card img {
+    width: 100%;
+    max-width: 1000px;
+    border: 5px solid #333;
+
+}
+
+#kategorier h3{
+    text-align: center;
+}
+
+
+
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    border: dotted;
+    padding: 1rem;
+}
+
+
+
+
+.review-grid img {
+    width: 100%;
+    width: 150px;
+    max-width: 150px;
+}
+
+.review-grid h3 {
+    text-align: center;
+}
+
+
+    /* Footer */
+#global-footer {
+    background-color: #fff;
+    padding: 2rem;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    li {
+        list-style: none;
+    }
+    a {
+        color: #333;
+        text-decoration: none;
+        
+    }
+} 
+
+.product-select {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    padding: 1rem;
+}
+
+.product-select img {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.product-name h3 {
+    font-style: bold;
+}
+
+.product-name h3 a {
+    color: #706b6b;
+    font-size: 22px;
+}
+
+.product-name button {
+    background-color: rgb(223, 221, 221);
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 0;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.similar-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.similar-products article img {
+    width: 100%;
+    max-width: 1000px; 
+    gap: 5px;
+}
+
+.similar-products article h3 {
+    text-align: center;
+}
+
+.similar-products article p {
+    text-align: center;
+}
+
+.similar-products a {
+    color: #333;
+}
+
+h1 {
+    font-size: 35px;
+    font-style: bold;
+}  
+
+h2 {
+    font-size: 40px;
+}
+
+.kasse
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.kasse article img {
+    width: 100%;
+    max-width: 1000px;
+    gap: 5px;
+}
+
+.kasse h2 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0.5rem;
+    
+}  
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    accent-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media query for små skjermer */
+@media (max-width: 1000px) {
+    #global-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #global-header .search-form {
+        margin-bottom: 1rem;
+    }
+
+    #global-header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #global-header .fa-icon {
+        margin-top: 1rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    #global-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+
+    }
+
+    body img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+
+
+
+
+    
+
+
+
